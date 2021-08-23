@@ -1,0 +1,144 @@
+<div class="container col-xl-12 col-xxl-12 px-4">
+
+    <!-- <div class="row align-items-center g-lg-5 py-5"> -->
+    <!-- <div class="col-lg-7 text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Seats filling up fast ! <p></p><span
+                    class="badge bg-primary text-wrap"><span class="text-light">Apply
+                        Now</span></span></h1>
+            <p class="col-lg-10 fs-4">We have 50 openings currently. Skills and interest is all that
+                matters
+                to
+                us</p>
+            <p class="col-lg-10 fs-4">You can apply if you :</p>
+            <p>
+            <ul>
+                <li>
+                    can start the part time job/internship between 12 Aug'21 and 26 Sep'21
+                </li>
+                <li>
+                    are available for duration of 1 (one) month
+                </li>
+                <li>
+                    have relevant skills and interests
+                </li>
+            </ul>
+            </p>
+        </div> -->
+    <div class="col-md-6 mx-auto col-lg-6">
+        <form class="p-4 p-md-5 border rounded-3 bg-light" method="POST" action="/ca/apply/submit">
+            <img src="/assets/images/ca2.png" class="d-block mx-lg-auto img-fluid" alt="JU E-Summit'21 Logo"
+                width="auto" loading="lazy" style="border-radius: 12px;">
+            <h4 class="text-center py-4">CA Application Form</h4>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput1" name="name" placeholder="Andy John"
+                    value="<%= formData.name %>">
+                <label for="floatingInput1">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput2" name="university"
+                    placeholder="Example Company Inc." value="<%= formData.university %>">
+                <label for="floatingInput2">University</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput3" name="department"
+                    placeholder="Example Company Inc.">
+                <label for="floatingInput3">Department</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput4" name="degree"
+                    placeholder="Example Company Inc." required>
+                <label for="floatingInput4">Degree (e.g. B.Tech/MCA/BCA)</label>
+            </div>
+            <div class="mb-3">
+                <select class="form-select" name="currently_pursuing" aria-label="Currently Pursuing">
+                    <option selected>Currently Pursuing (which year)</option>
+                    <option value="Y1">1st Year</option>
+                    <option value="Y2">2nd Year</option>
+                    <option value="Y3">3rd Year</option>
+                    <option value="Y4">4th Year</option>
+                    <option value="Y5">5th Year</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput5" name="grad_yr" placeholder="2022"
+                    required>
+                <label for="floatingInput5">Year of Graduation</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput6" name="email" placeholder="name@example.com"
+                    value="<%= formData.email %>">
+                <label for="floatingInput6">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput7" name="phone" placeholder="9999999999"
+                    value="<%= formData.phone %>">
+                <label for="floatingInput7">Phone (without country code)</label>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput8" name="age" placeholder="20"
+                            required>
+                        <label for="floatingInput8">Age</label>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" name="gender" aria-label="Gender select">
+                            <option selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="NA">Prefer not to answer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <label for="exampleFormControlTextarea1" class="form-label">Why do you want to become a JU E-Summit
+                Campus Ambassador?</label>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="why_ca" rows="5"
+                    required></textarea>
+            </div>
+
+            <label for="exampleFormControlTextarea2" class="form-label">Mention 2 innovative things you would do as a JU
+                E-Summit Campus Ambassador in your college.
+            </label>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea2" name="innovative_things" rows="3"
+                    required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-select" name="popular" aria-label="Popular" required>
+                    <option selected>On a scale of 1 to 5, how popular are you on Campus?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="url" class="form-control" id="floatingInput9" name="linkedin"
+                    placeholder="https://linkedin.com" required>
+                <label for="floatingInput9">LinkedIn Profile URL</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="url" class="form-control" id="floatingInput10" name="facebook"
+                    placeholder="https://facebook.com" required>
+                <label for="floatingInput10">Facebook Profile URL</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="url" class="form-control" id="floatingInput10" name="instagram"
+                    placeholder="https://instagram.com">
+                <label for="floatingInput10">Instagram Profile URL</label>
+            </div>
+            <input class="w-100 btn btn-lg btn-primary" type="submit"></input>
+            <hr class="my-4">
+            <small class="text-muted">By clicking Submit, you agree to the terms and conditions.</small>
+        </form>
+    </div>
+    <!-- </div> -->
+</div>

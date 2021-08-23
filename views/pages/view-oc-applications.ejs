@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTJ8BSG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <!-- Jumbotron -->
+        <div id="intro" class="p-5 text-center bg-light">
+            <img class="mb-4" src="../assets/images/blue_grad_logo.png" style="object-fit: cover; max-width: 250px;">
+            <br>
+            <h1 class="mb-3 h2 text-dark">OC Applications</h1>
+            <p class="mb-3">The flagship annual entrepreneurial event compendium of the Jadavpur
+                University is here!
+            </p>
+        </div>
+        <!-- Jumbotron -->
+    </header>
+
+    <!--Main layout-->
+    <main class="">
+        <div class="container">
+            <!--Section: Content-->
+            <section class="text-center">
+                <div class="row container">
+                    <table class="table align-middle table-striped" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Interests</th>
+                                <th scope="col">From</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% i=0; applications.forEach(function(application) { i=i+1; %>
+                                <!-- <div class="card border border-dark col-auto" style="margin: 5px;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= application.firstName %>
+                                        <%= application.lastName %>
+                                </h5>
+                                <p class="card-subtitle">
+                                    <% application.interestDepartments.forEach(function(dept) { let
+                                        badgeClass=(dept=="Designing" ) ? "primary" : dept=="Technical" ? "success"
+                                        : "warning text-dark" ;%>
+                                        <span class="badge bg-<%= badgeClass %>">
+                                            <%= dept %>
+                                        </span>
+                                        <% }); %>
+
+                                </p>
+                                <br>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <%= application.department %> - <%= application.gradYear %>
+                                </h6>
+                                <p class="card-text">
+                                    <%= application.phone %>
+                                </p>
+                                <p class="card-text text-truncate" style="max-width: 300px">
+                                    <%= application.interests %>
+
+                                </p>
+                                <p>
+                                    <a href="#" data-mdb-toggle="tooltip" title="<%= application.interests %>">View
+                                        Full</a>
+                                </p>
+
+
+                                <a href="<%= application.portfolioLink %>" class="card-link">View Portfolio</a>
+
+                                <a href="#" class="card-link text-success">Acknowledge</a>
+                            </div>
+                            <div class="card-footer">
+                                ID : <%= application._id %>
+                            </div>
+                        </div> -->
+
+                                <tr>
+                                    <th scope="row">
+                                        <%= i %>
+                                    </th>
+                                    <td>
+                                        <%= application.firstName %>
+                                            <%= application.lastName %>
+                                    </td>
+                                    <td>
+                                        <% application.interestDepartments.forEach(function(dept) { let
+                                            badgeClass=(dept=="Designing" ) ? "primary" : dept=="Technical" ? "success"
+                                            : "warning text-dark" ;%>
+                                            <span class="badge bg-<%= badgeClass %>">
+                                                <%= dept %>
+                                            </span>
+                                            <% }); %>
+                                    </td>
+                                    <td>
+                                        <%= application.department %> - <%= application.gradYear %>
+                                    </td>
+                                    <td>
+                                        <%= application.phone %>
+
+                                    </td>
+                                    <td>
+                                        <%= application.email %>
+                                    </td>
+
+                                </tr>
+
+
+                                <% }); %>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

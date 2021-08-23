@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head2'); %>
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/navBar.css" rel="stylesheet">
+  <link href="../assets/css/carousel.css" rel="stylesheet">
+  <link href="../assets/css/heroes.css" rel="stylesheet">
+  <link href="../assets/css/features.css" rel="stylesheet">
+  <link href="../assets/css/timeline-analyst.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Summit 2021</a>
+      <button class="btn btn-outline-primary btn-sm" type="button" id="register_button" aria-label="Toggle navigation">
+        Pre-Register Now
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <!-- <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+      <!-- <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Switch account</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Settings</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div> -->
+    </div>
+  </nav>
+
+  <!-- <div class="nav-scroller bg-body shadow-sm">
+        <nav class="nav nav-underline" aria-label="Secondary navigation">
+            <a class="nav-link active" aria-current="page" href="/">Explore</a>
+            <a class="nav-link" href="/legacy">Legacy</a>
+            <a class="nav-link" href="/events">
+                Events
+                <span class="badge bg-light text-dark rounded-pill align-text-bottom">5</span>
+            </a>
+            <a class="nav-link" href="/schedule">Schedule</a>
+            <a class="nav-link" href="/sponsors">Sponsors</a>
+            <a class="nav-link" href="latest">Latest</a>
+            <a class="nav-link" href="/ca">Campus Ambassador Program</a>
+            <a class="nav-link" href="/contact">Contact</a>
+        </nav>
+    </div> -->
+
+  <%- include('../partials/navScroller'); %>
+
+
+  <%- include('../partials/svgSymbols'); %>
+
+
+
+  <main>
+    <!-- Carousel starts -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
+        <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg> -->
+          <img src="../assets/images/analyst1.jpeg" height="100%">
+
+          <!-- <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div> -->
+        </div>
+        <!-- <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel ends -->
+
+    <!-- First hero starts -->
+
+    <div class="container col-xxl-12 px-4 py-2">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629535388/Analyst/Analyst_logo_dihvaq.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-2 fw-bold lh-1 mb-3">Case Study <span class="text-danger">Challenge.</span>
+          </h1>
+          <p class="lead">Shred off your lethargy and tickle your analytic mind by solving gripping case studies.
+            For the last two years, in collaboration with PwC and KPMG we conducted this challenge on <strong>consultancy</strong>. Come this session, we are launching a <span class="text-danger">Data Analytics challenge</span>, for you guys.</p>
+
+          <!-- <p class="lead">LaunchX opens up a vista of opportunities for young minds to ideate, launch and accelerate their startups. The startup pitching competition provides fundraising opportunities and serves to make young and budding entrepreneurs aware of the tremendous pool of market opportunities and resources available. If you are an early-stage startup looking to find its feet in the ideation phase or you nurture the desire to revolutionize the existing system, this platform is made just for you!</p> -->
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Register Now</button>
+            <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">View
+              Schedule</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- First hero ends -->
+
+    <!-- Second hero starts -->
+
+    <!-- <div class="px-4 pt-5 my-5 text-center">
+      <h1 class="display-4 fw-bold">3 Rounds to the <span class="text-danger">Cup.</span></h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">LaunchX opens up a vista of opportunities for young minds to ideate, launch and accelerate their startups. The startup pitching competition provides fundraising opportunities and serves to make young and budding entrepreneurs aware of the tremendous pool of market opportunities and resources available. If you are an early-stage startup looking to find its feet in the ideation phase or you nurture the desire to revolutionize the existing system, this platform is made just for you!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Register Now</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 40vh;">
+        <div class="container px-5">
+          <img src="../assets/images/launchx-vector1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="800" height="500" loading="lazy">
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Second hero ends -->
+
+    <!-- Third hero starts -->
+    <div class="container col-xxl-12 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="../assets/images/analyst.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Ideate. Compete. Win.</h1>
+          <p class="col-lg-10 fs-4">The event consists of 3 rounds: </p>
+          <!-- <p class="col-lg-10 fs-4">You can apply if you :</p> -->
+          <p>
+          <ul>
+            <li>
+              Mind boggling quiz round on D2C (Dare to Compete) - Quiz round consists of two sections. Section A would have 15 questions on logo + connect and section B would have 2 DI and 1 logical reasoning question. Duration is 30 minutes.
+            </li>
+            <li>
+              Selected 20 teams through D2C qualify for Prelims. They will be given case study problems by sponsoring companies.
+            </li>
+            <li>
+              Finally handpicked 8 teams out of Prelims will participate in the Finals, where they will be given another case study and will have to pitch live to judges.
+              Top 3 performing teams will receive cash rewards, perk to internships, and many exciting rewards.
+            </li>
+          </ul>
+          </p>
+          <p class="lead">What’s more in stock? This session we are organizing a bootcamp for all registering in this event.</p>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Register Now</button>
+            <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third hero ends -->
+
+
+
+    <!-- Timeline section starts -->
+
+    <!-- <div class="container"> -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title mb-5 text-center">Timeline</h1>
+
+              <div class="hori-timeline" dir="ltr">
+                <ul class="list-inline events">
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-primary text-primary">23 Aug - 3 Sep</div>
+                      <h5 class="font-size-16">Registration</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Registrations start at 1 PM on 23 Aug</h5>
+                          <!-- <p class="text-muted">Registration Portal is live now ! Head over to the portal, signup/login to your E-Summit Account and reserve your seat.</p> -->
+                          <a href="#" class="btn btn-primary">Register Now</a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Registrations end at 1 PM on 3 Sep</h5>
+                          <!-- <p class="text-muted">Registration Portal is live now ! Head over to the portal, signup/login to your E-Summit Account and reserve your seat.</p> -->
+                          <!-- <a href="#" class="btn btn-primary">Register Now</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">4 Sep</div>
+                      <h5 class="font-size-16">Round 1</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Quiz on D2C from 6 to 6:30 PM</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-danger text-danger">5 Sep</div>
+                      <h5 class="font-size-16">Bootcamp</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Bootcamp will be held</h5>
+                          <!-- <p class="text-muted">Participants will be needed to submit a business model/prototype of their ideas describing how they are planning to launch their idea into the market and convert it into a reality.</p> -->
+                          <!-- <h5 class="card-title">One-on-one mentorship sessions</h5> -->
+                          <!-- <p class="text-muted">Alumni from recognised organisations to provide one on one mentorship</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-primary text-primary">8 Sep</div>
+                      <h5 class="font-size-16">Results of Round 1</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Declared at 9 PM</h5>
+                          <!-- <p class="text-muted">Participants get a chance for mock pitching before the final pitch day</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">11-15 Sep</div>
+                      <h5 class="font-size-16">Case Submissions</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Case Reveal for Prelims</h5>
+                          <p class="text-muted">Case reveal to qualified participants for prelims at 11 AM on 11 Sep,</p>
+                          <h5 class="card-title">Case Submission closes</h5>
+                          <p class="text-muted">Case Submission for prelims to be accepted till 5 PM on 15 Sep.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">18 Sep</div>
+                      <h5 class="font-size-16">Prelims Winners</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Declaration of winners</h5>
+                          <p class="text-muted">Winners for Prelims round are declared</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- <h1 class="card-title mb-5 text-center">Timeline 2</h1> -->
+
+              <div class="hori-timeline" dir="ltr">
+                <ul class="list-inline events">
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-primary text-primary">22 Sep</div>
+                      <h5 class="font-size-16">Case Reveal</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Case reveal for finals at 11 am to the qualified participants</h5>
+                          <!-- <p class="text-muted">Registration Portal is live now ! Head over to the portal, signup/login to your E-Summit Account and reserve your seat.</p> -->
+                          <!-- <a href="#" class="btn btn-primary">Register Now</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">25 Sep</div>
+                      <h5 class="font-size-16">Live Pitching</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Live pitching of case solutions in front of judges.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item event-list">
+                    <div class="px-4">
+                      <div class="event-date bg-soft-success text-success">26 Sep</div>
+                      <h5 class="font-size-16">Final Results</h5>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Declaration of winners (top 3) at 11 AM</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- Timeline section ends -->
+
+      <!-- Timeline section starts -->
+
+      <!-- <div class="container"> -->
+      <!-- <div class="container-fluid"> -->
+      <!-- <div class="row"> -->
+      <!-- <div class="col-lg-12"> -->
+      <!-- <div class="card"> -->
+
+      <!-- </div> -->
+      <!-- end card -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+
+      <!-- Timeline section ends -->
+
+      <!-- Judges panel starts -->
+      <div class="container px-4 py-5">
+        <h1 class="display-4 fw-bold text-center">Jury <span class="text-primary">Panel</span>.</h1>
+        <p class="lead mb-4 text-center">To be unveiled soon.</p>
+      </div>
+      <!-- Judges panel ends -->
+
+      <!-- FAQ starts -->
+      <div class="container col-xl-12 col-xxl-12 px-4 py-3">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">FAQs</h1>
+            <p class="col-lg-10 fs-4">Here are some frequently asked questions. Nonetheless, LaunchX will be a once in a lifetime experience! </p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Can we form a team with students from different colleges?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes, cross college teams are allowed.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What are the skillsets required to participate in the Analyst event?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Curiosity, enthusiasm and the sheer keenness to analyse situations and solve problems.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What are the event incentives?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Winners are going to be provided with a cash prize, courses worth ₹9000 and internship opportunities.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What is the duration for the entire event?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The event spans for 23 days starting from 4th September to 26th September.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    How many teams will qualify for the next round?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    20 teams will qualify for the prelims and 8 teams will qualify for the finals. The winner of the finals are the top three.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ ends -->
+
+
+
+
+      <div class="container col-xl-12 col-xxl-12 px-4 py-3">
+        <h2 class="pb-2 text-primary border-bottom text-center">Captains</h2>
+        <!-- <h1 class="display-4 fw-bold text-center">Awaken the entrepreneur in <span class="text-danger">You</span>.</h1> -->
+        <div class="row mt-5 g-3 align-items-center">
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <img class="rounded-circle py-1 px-1" src="https://res.cloudinary.com/ju-ecell/image/upload/v1629561156/Analyst/POC/Screenshot_2021-08-21-21-04-37-23_fyevbz.jpg" width="140" height="140">
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title">Subhadeep Choudhury</h5>
+                    <p class="card-text">Phone : 9123388761</p>
+                    <a href="https://api.whatsapp.com/send?phone=919123388761&text=Hi%20there%20!%20I%20have%20a%20query%20regarding%20Analyst%20at%20E-Summit%20JU" class="btn btn-success"><i class="bi bi-whatsapp"></i> Ping me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <img class="rounded-circle py-1 px-1" src="https://res.cloudinary.com/ju-ecell/image/upload/v1629559707/Analyst/POC/neelarghya-01_mlrjmn.jpg" width="140" height="140">
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title">Neelarghya Saha</h5>
+                    <p class="card-text">Phone : 9334727178</p>
+                    <a href="https://api.whatsapp.com/send?phone=919334727178&text=Hi%20there%20!%20I%20have%20a%20query%20regarding%20Analyst%20at%20E-Summit%20JU" class="btn btn-success"><i class="bi bi-whatsapp"></i> Ping me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-start">
+            <!-- <h1 class="display-8 fw-light lh-1 mb-3">Captains</h1> -->
+            <small class="col-lg-10 fs-4">For any queries regarding LaunchX, feel free to contact us. Also, you can drop a mail to <span class="text-primary">analyst</span><span class="text-danger">@</span><span class="text-primary">juecell.in</span> . We'd be elated to assist you! </small>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Past Sponsors starts -->
+
+      <div class="album py-5 bg-light">
+        <div class="container text-center">
+          <h1 class="fw-light border-bottom mb-5 py-3">Sponsors</h1>
+          <div class="row g-3 row-cols-1 row-cols-sm-3 row-cols-md-4">
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629570434/Analyst/Sponsors/1_9t2uMNpbSNj2anLS0aExxA_sqbumm.png" width="90%" height="225">
+            </div>
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629570489/Analyst/Sponsors/KPMG_NoCP_RGB_279_iu0oq5.jpg" width="90%" height="225">
+            </div>
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629618703/Analyst/Sponsors/Seekho-550x330_pu2maw.jpg" width="90%" height="225">
+            </div>
+            <div class="col">
+              <img src="https://res.cloudinary.com/ju-ecell/image/upload/v1629570546/Analyst/Sponsors/sddefault_d890az.jpg" width="90%" height="225">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Past Sponsors ends -->
+
+  </main>
+
+
+  <%- include('../partials/footer2'); %>
+
+  <script src="../assets/js/navBar.js"></script>
+</body>
+
+</html>
